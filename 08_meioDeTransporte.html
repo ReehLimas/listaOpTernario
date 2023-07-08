@@ -6,12 +6,15 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const precoCombustivel = Number(prompt(`Informe o preço do litro do combustível:`).replace(",","."));
+    const litrosUltilizados = Number(prompt(`Informe a quantidade de litros ultilizados diariamente:`).replace(",","."));
+    const transportePublico = Number(prompt(`Informe o preço do  trensporte público:`).replace(",","."));
 
     //Processamento
-
+    const carro = (precoCombustivel / litrosUltilizados * 30);
+    const onibus = (transportePublico + transportePublico * 30);
     
     //Saída
-
+    (onibus < carro) ? alert(`O mais acessivel será o transporte público, gastando ${onibus} reais, por um mês.`) : (carro < onibus) ? alert(`O mais acessivel será ir de carro, gastando ${carro} reais, por um mês.`) : alert(`Valor invalido!`);
     
 </script>

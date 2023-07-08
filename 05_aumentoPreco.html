@@ -11,7 +11,7 @@
 const preco = Number(prompt(`Informe o preço do produto:`));
 
     //Processamento
-(preco >= 280)? alert(`Com o almento de 20% seu produto fica ${preco * 20/100}`):
+(preco <= 280) ? alert(`Com o almento de 20% seu produto fica ${preco + preco * 20/100}`) : (preco+preco <= 700) ? alert(`Com o aumento de 15% seu produto fica ${preco + preco * 15/100} reais`) : (preco <=1500)? alert(`Com o aumento de 10% seu produto fica ${preco + preco * 10/100}`) : (preco + preco >1500) ? alert(`Com o aumento de 5% seu podruto fica ${preco + preco * 5/100} reais`) : `Valor invalido`
 
 
     //Saída

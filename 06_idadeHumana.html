@@ -8,7 +8,12 @@
     // - cães grandes: fator 7.
 
     //Entrada
-
+    const idadeCao = Number(prompt(`Informe a idade do seu dog:`).trim());
+    const porte = Number(prompt(`Informe o porte do seu dog, sendo 1-Grande || 2-Médio || 3-Pequeno.`));
+    const pequeno = (idadeCao * 5);
+    const grande = (idadeCao * 7);
+    const medio = (idadeCao * 6);
+    (porte == 3) ? alert(`Seu cão em idade humana tem ${pequeno} anos`) : (porte == 2) ? alert(`Seu cão em idade humana tem ${medio} anos`) : (porte == 1) ? alert(`Seu cão em idade humana tem ${grande} anos`) : `Valor invalido`;
 
     //Processamento
 
